@@ -1,0 +1,18 @@
+{
+"Layer": "Vector Layer",
+"Dependent_Variable": "Field from Layer to be used as dependent variable",
+"explana_variables": "Field from Layer to be used as explanatory variables",
+"Regression.points": "Spatial*DataFrame object, i.e. SpatialPointsDataFrame or SpatialPolygonsDataFrame as defined in package sp; Note that no diagnostic information will returned if it is assigned",
+"bandwidth_kernel": "The kernel function to be used in calculating bandwidth",
+"bandwidth_adaptive": "Fixed or Adaptive bandwidth",
+"bandwidth_approach": "Specified by CV for cross-validation approach or by AIC corrected (AICc) or BIC approach",
+"gwr_kernel": "The kernel function to be used in calculating bandwidth",
+"gwr_adaptive": "Fixed or Adaptive bandwidth",
+"p": "The power of the Minkowski distance, default is 2, i.e. the Euclidean distance",
+"longlat": "If TRUE, great circle distances will be calculated",
+"F123Test": "If TRUE, conduct three seperate F-tests according to Leung et al. (2000)",
+"ALG_DESC": "This porcess build a geographical temporal weighted model",
+"ALG_CREATOR": "Rchss - GIS",
+"ALG_HELP_CREATOR": "Rchss - GIS",
+"ALG_VERSION": "0.0.1"
+}

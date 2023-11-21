@@ -247,7 +247,7 @@ RdYlBu_palette <- colorRampPalette(brewer.pal(100, "RdYlBu"))
 for (i in 1:length(explana_variables)) {
   var = explana_variables[i]
 
-  fill_var = paste0(var, "_TV")
+  fill_var = var
   alpha_var = paste0(var, "_Rate_pv") 
 
   scale_alpha = if(length(unique(df[[alpha_var]])) == 2) {

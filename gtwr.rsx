@@ -26,7 +26,6 @@
 # libraries
 library(GWmodel)
 library(sp)
-library(rgdal)
 library(ggplot2)
 library(sf)
 library(RColorBrewer)
@@ -219,7 +218,8 @@ dir.create(paste0(folder_path, "/GTWR_result"))
 folder_path = paste0(folder_path, "/GTWR_result")
 output_text = capture.output(gtwr.fit)
 writeLines(output_text, paste0(folder_path, "/GTWR_result.txt"))
-writeOGR(gtwr.fit$SDF, dsn = folder_path, layer = "SDF_result", driver = "ESRI Shapefile", check_exists = TRUE, overwrite_layer = TRUE)
+# writeOGR(gtwr.fit$SDF, dsn = folder_path, layer = "SDF_result", driver = "ESRI Shapefile", check_exists = TRUE, overwrite_layer = TRUE)
+st_write(st_as_sf(gtwr.fit$SDF), paste0(folder_path, "/SDF_result.shp"))
 # gwr.write(gtwr.fit, folder_path)
 
 

@@ -20,7 +20,7 @@
 # Libraries
 library(sp)
 library(GWmodel)
-library(rgdal)
+
 shorten_names <- function(names) {
   name_dict <- list()
   new_names <- character(length(names))
